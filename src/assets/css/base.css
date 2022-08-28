@@ -1,0 +1,83 @@
+@import "./normalize.css";
+@import "./transition.css";
+@import "./font.css";
+
+:root {
+    --mask: rgba(200, 200, 200, 0.5);
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragion Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: left;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: right;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-vertical-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.bold {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
